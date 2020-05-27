@@ -1,0 +1,35 @@
+@import "../vlog-template/vlog-template.wxss";
+
+.vlog-list-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30rpx;
+  background: rgba(165, 40, 41, 0.3);
+}
+.inner-container{
+  margin: 0 auto 20rpx;
+}
+.vlog-list-head{
+  padding: 30rpx 20rpx 22rpx;
+}
+.category-name{
+  font-size: 36rpx;
+}
+.more{
+  float: right;
+  font-size: 36rpx;
+}
+.more-text{
+  vertical-align: middle;
+  margin-right: 8rpx;
+  color: #A52829;
+}
+.more-icon{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+.vlogs-container{
+  display: flex;
+  flex-direction: row;
+}

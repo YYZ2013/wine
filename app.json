@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/vlog/vlog",
+    "pages/list/list-detail/list-detail",
+    "pages/vlog/vlog-more/vlog-more",
+    "pages/vlog/vlog-detail/vlog-detail"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#A52829",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "酒藏"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "wine-menu",
+        "iconPath": "pages/imgs/icon/menu.png",
+        "selectedIconPath": "pages/imgs/icon/selected-menu.png"
+      },
+      {
+        "pagePath": "pages/vlog/vlog",
+        "text": "wine-vlog",
+        "iconPath": "pages/imgs/icon/vlog.png",
+        "selectedIconPath": "pages/imgs/icon/selected-vlog.png"
+      }
+    ],
+    "backgroundColor": "#000000",
+    "color": "#bababa",
+    "selectedColor": "#A52829",
+    "borderStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

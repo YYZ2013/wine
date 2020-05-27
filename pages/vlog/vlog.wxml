@@ -1,0 +1,18 @@
+<import src="vlog-list-template/vlog-list-template.wxml" />
+<import src="vlog-more/vlog-grid-template/vlog-grid-template.wxml" />
+
+<view class="search">
+  <icon type="search" size="16" color="#A52829" class="search-icon"></icon>
+  <input type="text" placeholder="长城" placeholder-class="placeholder" bindfocus="onBindFocus" bindblur="onBindBlur" />
+  <image wx:if="{{ searchPanelShow }}" class="clear-icon" src="../imgs/icon/clear.png" catchtap="onCancelImgTap"></image>
+</view>
+
+<view class="vlog-panel" wx:if="{{ vlogPanelShow }}">
+  <template is="vlog-list-template" data="{{ ...today }}" />
+  <template is="vlog-list-template" data="{{ ...tomorrow }}" />
+  <template is="vlog-list-template" data="{{ ...top250 }}" />
+</view>
+
+<view class="search-panel" wx:if="{{ searchPanelShow }}">
+  <template is="vlog-grid-template" data="{{ ...searchData }}" />
+</view>

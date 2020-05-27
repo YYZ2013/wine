@@ -1,0 +1,9 @@
+<import src="../star-template/star-template.wxml" />
+
+<template name="vlog-template">
+  <view class="vlog-container" catchtap="goVlogDetail" data-vlogid="{{ id }}">
+    <image class="vlog-img" src="{{ img }}"></image>
+    <text class="vlog-title">{{ title }}</text>
+    <template is="star-template"  data="{{ score, stars }}"/>
+  </view>
+</template>

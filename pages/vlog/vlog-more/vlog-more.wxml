@@ -1,0 +1,4 @@
+<!--pages/vlog/vlog-more/vlog-more.wxml-->
+<import  src="vlog-grid-template/vlog-grid-template.wxml" />
+
+<template is="vlog-grid-template" data="{{ vlogs }}" />

@@ -1,0 +1,10 @@
+@import "../../vlog-template/vlog-template.wxss";
+
+.vlog-grid-container{
+  height: 1300rpx;
+  margin: 40rpx 0rpx 40rpx 16rpx;
+}
+.single-view-container{
+  float: left;
+  margin-bottom: 40rpx;
+}

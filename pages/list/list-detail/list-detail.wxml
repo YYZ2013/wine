@@ -1,0 +1,25 @@
+<!--pages/list/list-detail/list-detail.wxml-->
+<view class="list-detail-container">
+  <image class="wine-img" wx:if='{{ wineImg }}' src="../{{ wineImg }}"></image>
+  <view class="wine-detail">
+    <view class="author-info">
+      <image class="author-icon" wx:if='{{ authorIcon }}' src="../{{ authorIcon }}"></image>
+      <text class="author-name">{{ authorName }}</text>
+      <text class="author-date">{{ authorDate }}</text>
+      <image class="music" catchtap="togglePlay" src="{{ isPlay ? '../../imgs/icon/play.svg' : '../../imgs/icon/pause.svg' }}"></image>
+    </view>
+    <view class="wine-info">
+      <text class="wine-brand">{{ wineBrand }}</text>
+      <view class="horizon"></view>
+      <view class="icon">
+        <image wx:if="{{ collected }}" catchtap="toggleCollect" src="../../imgs/icon/collected.svg"></image>
+        <image wx:else catchtap="toggleCollect" src="../../imgs/icon/collect.svg"></image>
+        <image catchtap="goComment" src="../../imgs/icon/comment.svg"></image>
+      </view>
+      <text class="wine-introduce">{{ introduction }}</text>
+      <text class="price">{{ price }}</text>
+      <text class="discount-price">{{ discountPrice }}</text>
+    </view>  
+  </view>
+</view>
+

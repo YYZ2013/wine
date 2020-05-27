@@ -1,0 +1,2 @@
+/* pages/vlog/vlog-more/vlog-more.wxss */
+@import "vlog-grid-template/vlog-grid-template.wxss";

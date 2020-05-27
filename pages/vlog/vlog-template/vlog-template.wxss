@@ -1,0 +1,16 @@
+@import "../star-template/star-template.wxss";
+
+.vlog-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0 22rpx;
+}
+.vlog-img{
+  width: 200rpx;
+  height: 270rpx;
+  padding-bottom: 20rpx;
+}
+.vlog-title{
+  font-size: 24rpx;
+  margin-bottom: 16rpx;
+}

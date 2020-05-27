@@ -1,0 +1,56 @@
+<!--pages/list/list.wxml-->
+<import src="list-template/list-template.wxml" />
+
+<view class="list-container">
+  <swiper indicator-dots indicator-color="rgba(255, 255, 255, 0.9)" indicator-active-color="#A52829" autoplay current="{{ index }}" circular>
+    <swiper-item>
+      <image src="../imgs/banner1.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../imgs/banner2.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../imgs/banner3.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../imgs/banner4.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../imgs/banner5.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../imgs/banner6.png"></image>
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{ useData }}" wx:for-item="item" wx:key="key">
+  <!--
+    item = {
+      "listId": 0,
+      "authorIcon": "../imgs/酒吧老板徐博士.JPG",
+      "authorName": "酒吧老板徐博士",
+      "authorDate": "2020/05/06",
+      "wineBrand": "獭祭",
+      "wineImg": "../imgs/00獭祭.JPG",
+      "introduction": "獭祭 16% 45%纯米大吟酿 日本原装进口清酒 720ml",
+      "price": "原价 ￥300",
+      "discountPrice": "活动价 ￥260"
+    }
+
+    ...item
+
+    "listId": 0,
+    "authorIcon": "../imgs/酒吧老板徐博士.JPG",
+    "authorName": "酒吧老板徐博士",
+    "authorDate": "2020/05/06",
+    "wineBrand": "獭祭",
+    "wineImg": "../imgs/00獭祭.JPG",
+    "introduction": "獭祭 16% 45%纯米大吟酿 日本原装进口清酒 720ml",
+    "price": "原价 ￥300",
+    "discountPrice": "活动价 ￥260" 
+  -->
+    <view catchtap="goListDetail" data-listId="{{ item.listId }}">
+      <template is="list-template" data="{{ ...item }}" />
+    </view>
+  </block>
+</view>
+

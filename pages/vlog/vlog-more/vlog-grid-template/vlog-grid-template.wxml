@@ -1,0 +1,10 @@
+<import src="../../vlog-template/vlog-template.wxml" />
+<template name="vlog-grid-template">
+  <view class="vlog-grid-container">
+    <block wx:for="{{ vlogs }}" wx:for-item="item" wx:key="key">
+      <view class="single-view-container">
+        <template is="vlog-template" data="{{ ...item }}"/>
+      </view>
+    </block>
+  </view>
+</template>

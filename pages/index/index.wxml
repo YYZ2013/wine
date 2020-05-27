@@ -1,0 +1,8 @@
+<view class="index-container">
+  <image class="logo" src="../imgs/logo.png"></image>
+  <text class="username">月牙坠</text>
+  <view class="btn" catchtap="goListTap">
+    <text>酒单</text>
+  </view>
+</view>
+  

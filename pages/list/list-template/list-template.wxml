@@ -1,0 +1,14 @@
+<template name="list-template">
+  <view class="wine-list">
+    <view class="author-info">
+      <image class="author-icon" src="{{ authorIcon }}"></image>
+      <text class="author-name">{{ authorName }}</text>
+      <text class="author-date">{{ authorDate }}</text>
+    </view>
+    <text class="wine-brand">{{ wineBrand }}</text>
+    <image class="wine-img" src="{{ wineImg }}"></image>
+    <text class="introduction">{{ introduction }}</text>
+    <text class="price">{{ price }}</text>
+    <text class="discount-price">{{ discountPrice }}</text>
+  </view>
+</template>

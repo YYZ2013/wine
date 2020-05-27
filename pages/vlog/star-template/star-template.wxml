@@ -1,0 +1,18 @@
+<template name="star-template">
+  <view class="stars-container">
+    <view class="stars">
+      <!-- <image src="../imgs/icon/star-empty.png"></image>
+      <image src="../imgs/icon/star-empty.png"></image>
+      <image src="../imgs/icon/star-empty.png"></image>
+      <image src="../imgs/icon/star-empty.png"></image>
+      <image src="../imgs/icon/star-empty.png"></image> -->
+      <block wx:for="{{ stars }}" wx:for-item="item" wx:key="key">
+        <!-- <image src="{{ item ? '../imgs/icon/star-full.png' : '../imgs/icon/star-empty.png' }}"></image> -->
+        <image wx:if="{{ item==0 }}" src="/pages/imgs/icon/star-empty.png"></image>
+        <image wx:elif="{{ item==0.5 }}" src="/pages/imgs/icon/star-half.png"></image>
+        <image wx:else="{{ item==1 }}" src="/pages/imgs/icon/star-full.png"></image>
+      </block>
+    </view>
+    <text class="star-score">{{ score }}</text>
+  </view>
+</template>
